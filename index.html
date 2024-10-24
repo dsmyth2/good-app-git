@@ -40,6 +40,13 @@
   </header>
   <body class="bg-light">
     <div class="main-body px-5 my-3 bg-light">
+      <div id="welcome">
+        <div class="text-primary h3">
+          Welcome to our example survey! Please answer the following
+          questions...
+        </div>
+      </div>
+      <hr class="border border-secondary" />
       <div class="" id="question-1">
         <div class="text-primary h4">
           <label for="radio-group">What is your favorite hobby?</label>
@@ -180,17 +187,223 @@
       <hr class="border border-secondary w-50" />
       <div id="question-4">
         <div class="text-primary h4">
-          <label for="">What is your favorite book and why?</label>
+          <label for="">What is your favorite book?</label>
         </div>
         <div class="input-group mb-3 w-50">
           <input
             type="text"
             class="form-control"
-            placeholder="Explain..."
+            placeholder="Enter text..."
             aria-label=""
             aria-describedby="basic-addon1"
           />
         </div>
+      </div>
+      <hr class="border border-secondary w-50" />
+      <div id="question-5">
+        <div class="text-primary h4 w-50">
+          Please describe a challenge you faced at work and how you overcame it.
+        </div>
+        <div class="input-group mb-3 w-50">
+          <textarea
+            class="form-control"
+            id="q5-textarea"
+            rows="3"
+            placeholder="Explain..."
+          ></textarea>
+        </div>
+      </div>
+      <hr class="border border-secondary w-50" />
+      <div id="question-6">
+        <div class="text-primary h4 w-50">
+          Please rate our customer service from 1-5.
+        </div>
+        <div class="text-secondary h5 w-50">
+          1 (Not satisfied) - 5 (Very Satisfied)
+        </div>
+        <div id="q6-input" class="w-50">
+          <label
+            for="q6-range"
+            class="text-primary d-flex flex-fill justify-content-between"
+          >
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+          </label>
+          <input
+            type="range"
+            name=""
+            id="q6-range"
+            class="form-range"
+            min="1"
+            max="5"
+          />
+        </div>
+      </div>
+      <hr class="border border-secondary w-50" />
+      <div id="question-7">
+        <div class="text-primary h4 w-50">
+          Which benefits do you consider important?
+        </div>
+        <div id="table-div" class="w-75">
+          <table
+            class="table table-light table-hover table-bordered border-primary-subtle"
+          >
+            <thead class="table-secondary border border-primary-subtle">
+              <tr>
+                <th scope="col">Benefit</th>
+                <th scope="col">Important</th>
+                <th scope="col">Somewhat Important</th>
+                <th scope="col">Not Important</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Health Insurance</th>
+                <td class="">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="health-insurance"
+                    id=""
+                  />
+                </td>
+                <td class="">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="health-insurance"
+                    id=""
+                  />
+                </td>
+                <td class="">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="health-insurance"
+                    id=""
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Flexible Hours</th>
+                <td class="">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexible-hours"
+                    id=""
+                  />
+                </td>
+                <td class="">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexible-hours"
+                    id=""
+                  />
+                </td>
+                <td class="">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexible-hours"
+                    id=""
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Work-From-Home</th>
+                <td class="">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="work-home"
+                    id=""
+                  />
+                </td>
+                <td class="">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="work-home"
+                    id=""
+                  />
+                </td>
+                <td class="">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="work-home"
+                    id=""
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Retirement Plant</th>
+                <td class="">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="retirement-plan"
+                    id=""
+                  />
+                </td>
+                <td class="">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="retirement-plan"
+                    id=""
+                  />
+                </td>
+                <td class="">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="retirement-plan"
+                    id=""
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <hr class="border border-secondary w-50" />
+      <div id="question-8">
+        <div class="text-primary h4 w-50">
+          When would you prefer to attend a company workshop?
+        </div>
+        <div id="date-picker">
+          <input
+            type="date"
+            class="form-control w-25"
+            name="date-select"
+            id=""
+          />
+        </div>
+      </div>
+      <hr class="border border-secondary" />
+      <div id="thank-you">
+        <div class="text-primary h3">
+          Thank you for filling out the survey! Please click the button below to
+          submit.
+        </div>
+        <div id="thank-you-btn">
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div class="px-5 my-3 bg-light">
+      <div id="disclosure">
+        <p class="text-secondary">
+          The survey does not collect any information, as it is simply an HTML
+          example of a form.<br />None of your answers will be recorded or
+          attached to you.
+        </p>
       </div>
     </div>
   </body>
