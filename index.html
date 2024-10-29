@@ -14,167 +14,93 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="app.js"></script> -->
     <title>Accessible Website</title>
   </head>
-  <header
-    class="d-flex justify-content-center py-3 bg-secondary text-light shadow-sm rounded-bottom"
-  >
-    <ul class="nav nav-pills">
-      <li class="nav-item">
-        <a href="#" class="nav-link active" aria-current="page">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link text-light">Features</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link text-light">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link text-light">FAQs</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link text-light">About</a>
-      </li>
-    </ul>
-  </header>
   <body class="bg-light">
-    <div class="main-body px-5 my-3 bg-light">
-      <div id="welcome">
-        <div class="text-primary h3">
-          Welcome to our example survey! Please answer the following
-          questions...
-        </div>
-      </div>
+    <!-- Header with Navigation -->
+    <header class="d-flex justify-content-center py-3 bg-secondary text-light shadow-sm">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-light">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-light">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-light">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-light">About</a></li>
+      </ul>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-4">
+      <!-- Introduction Section -->
+      <section id="welcome" class="mb-4">
+        <h3 class="text-primary">Welcome to our example survey!</h3>
+        <p>Please answer the following questions...</p>
+      </section>
       <hr class="border border-secondary" />
-      <div class="" id="question-1">
-        <div class="text-primary h4">
-          <label for="radio-group">What is your favorite hobby?</label>
-        </div>
+
+      <!-- Question 1 -->
+      <section id="question-1" class="mb-4">
+        <h4 class="text-primary">What is your favorite hobby?</h4>
         <div class="radio-group">
           <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault1"
-            />
-            <label class="form-check-label" for="flexRadioDefault1">
-              Reading
-            </label>
+            <input class="form-check-input" type="radio" name="hobby" id="hobby-reading" />
+            <label class="form-check-label" for="hobby-reading">Reading</label>
           </div>
           <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault2"
-            />
-            <label class="form-check-label" for="flexRadioDefault2">
-              Hiking
-            </label>
+            <input class="form-check-input" type="radio" name="hobby" id="hobby-hiking" />
+            <label class="form-check-label" for="hobby-hiking">Hiking</label>
           </div>
           <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault2"
-            />
-            <label class="form-check-label" for="flexRadioDefault2">
-              Cooking
-            </label>
+            <input class="form-check-input" type="radio" name="hobby" id="hobby-cooking" />
+            <label class="form-check-label" for="hobby-cooking">Cooking</label>
           </div>
           <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault2"
-            />
-            <label class="form-check-label" for="flexRadioDefault2">
-              Gaming
-            </label>
+            <input class="form-check-input" type="radio" name="hobby" id="hobby-gaming" />
+            <label class="form-check-label" for="hobby-gaming">Gaming</label>
           </div>
           <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault2"
-            />
-            <label class="form-check-label" for="flexRadioDefault2">
-              Watching Movies
-            </label>
+            <input class="form-check-input" type="radio" name="hobby" id="hobby-movies" />
+            <label class="form-check-label" for="hobby-movies">Watching Movies</label>
           </div>
         </div>
-      </div>
-      <hr class="border border-secondary w-50" />
-      <div id="question-2">
-        <div class="text-primary h4">
-          <label for="form-check">What times do you exercise?</label>
+      </section>
+      <hr class="border border-secondary" />
+
+      <!-- Question 2 -->
+      <section id="question-2" class="mb-4">
+        <h4 class="text-primary">What times do you exercise?</h4>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="exercise-morning" />
+          <label class="form-check-label" for="exercise-morning">Morning</label>
         </div>
         <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckDefault"
-          />
-          <label class="form-check-label" for="flexCheckDefault">
-            Morning
-          </label>
+          <input class="form-check-input" type="checkbox" id="exercise-afternoon" />
+          <label class="form-check-label" for="exercise-afternoon">Afternoon</label>
         </div>
         <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckDefault"
-          />
-          <label class="form-check-label" for="flexCheckDefault">
-            Afternoon
-          </label>
+          <input class="form-check-input" type="checkbox" id="exercise-evening" />
+          <label class="form-check-label" for="exercise-evening">Evening</label>
         </div>
         <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckDefault"
-          />
-          <label class="form-check-label" for="flexCheckDefault">
-            Evening
-          </label>
+          <input class="form-check-input" type="checkbox" id="exercise-night" />
+          <label class="form-check-label" for="exercise-night">Night</label>
         </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckDefault"
-          />
-          <label class="form-check-label" for="flexCheckDefault"> Night </label>
-        </div>
-      </div>
-      <hr class="border border-secondary w-50" />
-      <div id="question-3">
-        <div class="text-primary h4">
-          <label for="form-check"
-            >Which department are you associated with?</label
-          >
-        </div>
+      </section>
+      <hr class="border border-secondary" />
+
+      <!-- Question 3 -->
+      <section id="question-3" class="mb-4">
+        <h4 class="text-primary">Which department are you associated with?</h4>
         <div class="dropdown">
           <button
             class="btn btn-secondary dropdown-toggle"
             type="button"
-            id="dropdownMenuButton1"
+            id="departmentDropdown"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Dropdown button
+            Select Department
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <ul class="dropdown-menu" aria-labelledby="departmentDropdown">
             <li><a class="dropdown-item" href="#">Sales</a></li>
             <li><a class="dropdown-item" href="#">Marketing</a></li>
             <li><a class="dropdown-item" href="#">HR</a></li>
@@ -183,228 +109,85 @@
             <li><a class="dropdown-item" href="#">Finance</a></li>
           </ul>
         </div>
-      </div>
-      <hr class="border border-secondary w-50" />
-      <div id="question-4">
-        <div class="text-primary h4">
-          <label for="">What is your favorite book?</label>
-        </div>
-        <div class="input-group mb-3 w-50">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Enter text..."
-            aria-label=""
-            aria-describedby="basic-addon1"
-          />
-        </div>
-      </div>
-      <hr class="border border-secondary w-50" />
-      <div id="question-5">
-        <div class="text-primary h4 w-50">
-          Please describe a challenge you faced at work and how you overcame it.
-        </div>
-        <div class="input-group mb-3 w-50">
-          <textarea
-            class="form-control"
-            id="q5-textarea"
-            rows="3"
-            placeholder="Explain..."
-          ></textarea>
-        </div>
-      </div>
-      <hr class="border border-secondary w-50" />
-      <div id="question-6">
-        <div class="text-primary h4 w-50">
-          Please rate our customer service from 1-5.
-        </div>
-        <div class="text-secondary h5 w-50">
-          1 (Not satisfied) - 5 (Very Satisfied)
-        </div>
-        <div id="q6-input" class="w-50">
-          <label
-            for="q6-range"
-            class="text-primary d-flex flex-fill justify-content-between"
-          >
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
-          </label>
-          <input
-            type="range"
-            name=""
-            id="q6-range"
-            class="form-range"
-            min="1"
-            max="5"
-          />
-        </div>
-      </div>
-      <hr class="border border-secondary w-50" />
-      <div id="question-7">
-        <div class="text-primary h4 w-50">
-          Which benefits do you consider important?
-        </div>
-        <div id="table-div" class="w-75">
-          <table
-            class="table table-light table-hover table-bordered border-primary-subtle"
-          >
-            <thead class="table-secondary border border-primary-subtle">
-              <tr>
-                <th scope="col">Benefit</th>
-                <th scope="col">Important</th>
-                <th scope="col">Somewhat Important</th>
-                <th scope="col">Not Important</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Health Insurance</th>
-                <td class="">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="health-insurance"
-                    id=""
-                  />
-                </td>
-                <td class="">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="health-insurance"
-                    id=""
-                  />
-                </td>
-                <td class="">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="health-insurance"
-                    id=""
-                  />
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Flexible Hours</th>
-                <td class="">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="flexible-hours"
-                    id=""
-                  />
-                </td>
-                <td class="">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="flexible-hours"
-                    id=""
-                  />
-                </td>
-                <td class="">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="flexible-hours"
-                    id=""
-                  />
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Work-From-Home</th>
-                <td class="">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="work-home"
-                    id=""
-                  />
-                </td>
-                <td class="">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="work-home"
-                    id=""
-                  />
-                </td>
-                <td class="">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="work-home"
-                    id=""
-                  />
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Retirement Plant</th>
-                <td class="">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="retirement-plan"
-                    id=""
-                  />
-                </td>
-                <td class="">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="retirement-plan"
-                    id=""
-                  />
-                </td>
-                <td class="">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="retirement-plan"
-                    id=""
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <hr class="border border-secondary w-50" />
-      <div id="question-8">
-        <div class="text-primary h4 w-50">
-          When would you prefer to attend a company workshop?
-        </div>
-        <div id="date-picker">
-          <input
-            type="date"
-            class="form-control w-25"
-            name="date-select"
-            id=""
-          />
-        </div>
-      </div>
+      </section>
       <hr class="border border-secondary" />
-      <div id="thank-you">
-        <div class="text-primary h3">
-          Thank you for filling out the survey! Please click the button below to
-          submit.
+
+      <!-- Question 4 -->
+      <section id="question-4" class="mb-4">
+        <h4 class="text-primary">What is your favorite book?</h4>
+        <div class="input-group w-50">
+          <input type="text" class="form-control" placeholder="Enter text..." />
         </div>
-        <div id="thank-you-btn">
-          <button type="button" class="btn btn-primary">Submit</button>
-        </div>
+      </section>
+      <hr class="border border-secondary" />
+
+      <!-- Question 5 -->
+      <section id="question-5" class="mb-4">
+        <h4 class="text-primary">Describe a challenge you faced at work and how you overcame it:</h4>
+        <textarea class="form-control w-50" rows="3" placeholder="Explain..."></textarea>
+      </section>
+      <hr class="border border-secondary" />
+
+      <!-- Question 6 -->
+      <section id="question-6" class="mb-4">
+        <h4 class="text-primary">Please rate our customer service from 1-5</h4>
+        <p class="text-secondary">1 (Not satisfied) - 5 (Very Satisfied)</p>
+        <input type="range" class="form-range" min="1" max="5" />
+      </section>
+      <hr class="border border-secondary" />
+
+      <!-- Question 7 -->
+      <section id="question-7" class="mb-4">
+        <h4 class="text-primary">Which benefits do you consider important?</h4>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Benefit</th>
+              <th>Important</th>
+              <th>Somewhat Important</th>
+              <th>Not Important</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Health Insurance</td>
+              <td><input type="radio" name="health-insurance" /></td>
+              <td><input type="radio" name="health-insurance" /></td>
+              <td><input type="radio" name="health-insurance" /></td>
+            </tr>
+            <tr>
+              <td>Flexible Hours</td>
+              <td><input type="radio" name="flexible-hours" /></td>
+              <td><input type="radio" name="flexible-hours" /></td>
+              <td><input type="radio" name="flexible-hours" /></td>
+            </tr>
+            <tr>
+              <td>Work-From-Home</td>
+              <td><input type="radio" name="work-from-home" /></td>
+              <td><input type="radio" name="work-from-home" /></td>
+              <td><input type="radio" name="work-from-home" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr class="border border-secondary" />
+
+      <!-- Question 8 -->
+      <section id="question-8" class="mb-4">
+        <h4 class="text-primary">When would you prefer to attend a company workshop?</h4>
+        <input type="date" class="form-control w-25" />
+      </section>
+      <hr class="border border-secondary" />
+
+      <!-- Submit Button -->
+      <div class="mt-4">
+        <button class="btn btn-primary" type="submit">Submit Survey</button>
       </div>
-    </div>
-    <div class="px-5 my-3 bg-light">
-      <div id="disclosure">
-        <p class="text-secondary">
-          The survey does not collect any information, as it is simply an HTML
-          example of a form.<br />None of your answers will be recorded or
-          attached to you.
-        </p>
-      </div>
-    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container mt-5 text-center">
+      <p class="text-secondary">This survey does not collect any personal information.</p>
+    </footer>
   </body>
 </html>
