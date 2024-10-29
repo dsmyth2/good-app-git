@@ -19,13 +19,25 @@
   </head>
   <body class="bg-light">
     <!-- Header with Navigation -->
-    <header class="d-flex justify-content-center py-3 bg-secondary text-light shadow-sm">
+    <header
+      class="d-flex justify-content-center py-3 bg-secondary text-light shadow-sm"
+    >
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link text-light">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link text-light">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link text-light">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link text-light">About</a></li>
+        <li class="nav-item">
+          <a href="#" class="nav-link active" aria-current="page">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-light">Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-light">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-light">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-light">About</a>
+        </li>
       </ul>
     </header>
 
@@ -43,24 +55,51 @@
         <h4 class="text-primary">What is your favorite hobby?</h4>
         <div class="radio-group">
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="hobby" id="hobby-reading" />
+            <input
+              class="form-check-input"
+              type="radio"
+              name="hobby"
+              id="hobby-reading"
+            />
             <label class="form-check-label" for="hobby-reading">Reading</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="hobby" id="hobby-hiking" />
+            <input
+              class="form-check-input"
+              type="radio"
+              name="hobby"
+              id="hobby-hiking"
+            />
             <label class="form-check-label" for="hobby-hiking">Hiking</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="hobby" id="hobby-cooking" />
+            <input
+              class="form-check-input"
+              type="radio"
+              name="hobby"
+              id="hobby-cooking"
+            />
             <label class="form-check-label" for="hobby-cooking">Cooking</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="hobby" id="hobby-gaming" />
+            <input
+              class="form-check-input"
+              type="radio"
+              name="hobby"
+              id="hobby-gaming"
+            />
             <label class="form-check-label" for="hobby-gaming">Gaming</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="hobby" id="hobby-movies" />
-            <label class="form-check-label" for="hobby-movies">Watching Movies</label>
+            <input
+              class="form-check-input"
+              type="radio"
+              name="hobby"
+              id="hobby-movies"
+            />
+            <label class="form-check-label" for="hobby-movies"
+              >Watching Movies</label
+            >
           </div>
         </div>
       </section>
@@ -70,15 +109,29 @@
       <section id="question-2" class="mb-4">
         <h4 class="text-primary">What times do you exercise?</h4>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="exercise-morning" />
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="exercise-morning"
+          />
           <label class="form-check-label" for="exercise-morning">Morning</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="exercise-afternoon" />
-          <label class="form-check-label" for="exercise-afternoon">Afternoon</label>
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="exercise-afternoon"
+          />
+          <label class="form-check-label" for="exercise-afternoon"
+            >Afternoon</label
+          >
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="exercise-evening" />
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="exercise-evening"
+          />
           <label class="form-check-label" for="exercise-evening">Evening</label>
         </div>
         <div class="form-check">
@@ -90,10 +143,14 @@
 
       <!-- Question 3 -->
       <section id="question-3" class="mb-4">
-        <h4 class="text-primary">Which department are you associated with?</h4>
-        <div class="dropdown">
+        <div id="title-container">
+          <h4 class="text-primary">
+            Which department are you associated with?
+          </h4>
+        </div>
+        <div class="dropdown d-flex align-content-start">
           <button
-            class="btn btn-secondary dropdown-toggle"
+            class="btn btn-secondary dropdown-toggle mx-0"
             type="button"
             id="departmentDropdown"
             data-bs-toggle="dropdown"
@@ -124,8 +181,14 @@
 
       <!-- Question 5 -->
       <section id="question-5" class="mb-4">
-        <h4 class="text-primary">Describe a challenge you faced at work and how you overcame it:</h4>
-        <textarea class="form-control w-50" rows="3" placeholder="Explain..."></textarea>
+        <h4 class="text-primary">
+          Describe a challenge you faced at work and how you overcame it:
+        </h4>
+        <textarea
+          class="form-control w-50"
+          rows="3"
+          placeholder="Explain..."
+        ></textarea>
       </section>
       <hr class="border border-secondary" />
 
@@ -175,7 +238,9 @@
 
       <!-- Question 8 -->
       <section id="question-8" class="mb-4">
-        <h4 class="text-primary">When would you prefer to attend a company workshop?</h4>
+        <h4 class="text-primary">
+          When would you prefer to attend a company workshop?
+        </h4>
         <input type="date" class="form-control w-25" />
       </section>
       <hr class="border border-secondary" />
@@ -188,7 +253,9 @@
 
     <!-- Footer -->
     <footer class="container mt-5 text-center">
-      <p class="text-secondary">This survey does not collect any personal information.</p>
+      <p class="text-secondary">
+        This survey does not collect any personal information.
+      </p>
     </footer>
   </body>
 </html>
