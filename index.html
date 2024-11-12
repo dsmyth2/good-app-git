@@ -149,6 +149,20 @@
           </h4>
         </div>
         <div class="dropdown d-flex align-content-start">
+          <select
+            class="btn btn-secondary dropdown-toggle mx-0"
+            name="department"
+            id="departmentDropdown"
+          >
+            <option class="dropdown-item" value="Sales">Sales</option>
+            <option class="dropdown-item" value="Marketing">Marketing</option>
+            <option class="dropdown-item" value="HR">HR</option>
+            <option class="dropdown-item" value="IT">IT</option>
+            <option class="dropdown-item" value="Operations">Operations</option>
+            <option class="dropitem" value="Finance">Finance</option>
+          </select>
+        </div>
+        <!-- <div class="dropdown d-flex align-content-start">
           <button
             class="btn btn-secondary dropdown-toggle mx-0"
             type="button"
@@ -159,14 +173,14 @@
             Select Department
           </button>
           <ul class="dropdown-menu" aria-labelledby="departmentDropdown">
-            <li><a class="dropdown-item" href="#">Sales</a></li>
-            <li><a class="dropdown-item" href="#">Marketing</a></li>
-            <li><a class="dropdown-item" href="#">HR</a></li>
-            <li><a class="dropdown-item" href="#">IT</a></li>
-            <li><a class="dropdown-item" href="#">Operations</a></li>
-            <li><a class="dropdown-item" href="#">Finance</a></li>
+            <li><a class="dropdown-item">Sales</a></li>
+            <li><a class="dropdown-item">Marketing</a></li>
+            <li><a class="dropdown-item">HR</a></li>
+            <li><a class="dropdown-item">IT</a></li>
+            <li><a class="dropdown-item">Operations</a></li>
+            <li><a class="dropdown-item">Finance</a></li>
           </ul>
-        </div>
+        </div> -->
       </section>
       <hr class="border border-secondary" />
 
@@ -196,6 +210,13 @@
       <section id="question-6" class="mb-4">
         <h4 class="text-primary">Please rate our customer service from 1-5</h4>
         <p class="text-secondary">1 (Not satisfied) - 5 (Very Satisfied)</p>
+        <div class="d-flex justify-content-between">
+          <p class="text-secondary">1</p>
+          <p class="text-secondary">2</p>
+          <p class="text-secondary">3</p>
+          <p class="text-secondary">4</p>
+          <p class="text-secondary">5</p>
+        </div>
         <input type="range" class="form-range" min="1" max="5" />
       </section>
       <hr class="border border-secondary" />
